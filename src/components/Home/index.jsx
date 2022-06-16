@@ -3,7 +3,7 @@ import Filter from '../Filter'
 import Recommended from './Recommended'
 import Carousel from './Carousel'
 import Choose from './ChooseInfo'
-
+import Category from './Category'
 const Home = () => {
   return (
     <div>
@@ -11,6 +11,7 @@ const Home = () => {
       <Carousel />
       <Recommended/>
       <Choose/>
+      <Category/>
     </div>
   )
 }

@@ -7,8 +7,7 @@ import { ReactComponent as like } from '../../assets/icons/like.svg'
 import { ReactComponent as resize } from '../../assets/icons/resize.svg'
 
 const Container = styled.div`
-  max-width: 380px;
-  min-width: 280px;
+  width: 380px;
   position: relative;
   height: 430px;
   background: #FFFFFF;

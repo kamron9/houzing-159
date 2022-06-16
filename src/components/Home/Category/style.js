@@ -1,48 +1,39 @@
 import styled from "styled-components";
 import { ReactComponent as LeftArrow } from '../../../assets/icons/leftArrow.svg'
 import { ReactComponent as RightArrow } from '../../../assets/icons/rightArrow.svg'
+
 const Container = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
-  .description{
-    text-align: center;
-  }
-`;
+    width: 100%;
+    height: 692px;
+    h1{
+        margin-top: 96px;
+    }
+`
 const Wrapper = styled.div`
-		display: flex;
-		justify-content: center;
-		width:100%;
-		position: relative;
-		height: 600px;
-		max-width: 1400px;
- .alice-carousel{
+    margin-top: 32px;
+    display: flex;
+    padding: 0 130px;
+    position: relative;
+    justify-content: center;
+    .alice-carousel{
         max-width: 1280px;
     }
 		.alice-carousel__stage{	
 			padding: 20px;
 		}
 `
-const Carousel = styled.div`
-		width: 100%;
-		padding: 0 50px;
-`;
-
 
 
 const Icon = styled.div``;
 
 Icon.Left = styled(LeftArrow)`
   border: 1px solid #0d263b;
-  box-shadow: 0px 10px 50px rgba(13, 38, 59, 0.1);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	top: 40%;
-	left: 0px;
+	top: 45%;
+	left: 150px;
 	transform: translate(0%, -50%);
 	width: 45px;
 	height: 45px;
@@ -61,13 +52,12 @@ Icon.Left = styled(LeftArrow)`
 `;
 Icon.Right = styled(RightArrow)`
   border: 1px solid #0d263b;
- 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	top: 39%;
-	right: 0px;
+	top: 45%;
+	right: 150px;
 	transform: translate(-0%, -40%);
 	width: 45px;
 	height: 45px;
@@ -83,5 +73,6 @@ Icon.Right = styled(RightArrow)`
 	& path {
 		fill: #0d263b;
 	}
-`;
-export { Container, Wrapper, Carousel, Icon }
+    `;
+
+export{Container,Wrapper,Icon}
