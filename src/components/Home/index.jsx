@@ -4,6 +4,8 @@ import Recommended from './Recommended'
 import Carousel from './Carousel'
 import Choose from './ChooseInfo'
 import Category from './Category'
+import FarmHouse from './FarmHouse'
+import Comments from './Comments'
 const Home = () => {
   return (
     <div>
@@ -12,6 +14,9 @@ const Home = () => {
       <Recommended/>
       <Choose/>
       <Category/>
+      <FarmHouse/>
+      <Recommended title={'Recent Properties for Rent'}/>
+      <Comments/>
     </div>
   )
 }

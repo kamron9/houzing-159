@@ -2,21 +2,21 @@ import styled from "styled-components";
 import { ReactComponent as LeftArrow } from '../../../assets/icons/leftArrow.svg'
 import { ReactComponent as RightArrow } from '../../../assets/icons/rightArrow.svg'
 const Container = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
-  .description{
-    text-align: center;
-  }
+    background: #F5F7FC;
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 `;
+
 const Wrapper = styled.div`
 		display: flex;
 		justify-content: center;
 		width:100%;
+        max-width: 1180px;
 		position: relative;
-		height: 600px;
+		height: fit-content;
 		max-width: 1400px;
  .alice-carousel{
         max-width: 1280px;
@@ -24,12 +24,16 @@ const Wrapper = styled.div`
 		.alice-carousel__stage{	
 			padding: 20px;
 		}
+        @media screen and (min-width:992px){
+            .alice-carousel__dots{
+                display: none;
+            }
+        }
 `
 const Carousel = styled.div`
 		width: 100%;
 		padding: 0 50px;
 `;
-
 
 
 const Icon = styled.div``;
@@ -41,7 +45,7 @@ Icon.Left = styled(LeftArrow)`
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	left: 0px;
 	transform: translate(-150%, -50%);
 	width: 45px;
@@ -66,7 +70,7 @@ Icon.Right = styled(RightArrow)`
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	top: 39%;
+	top: 49%;
 	right: 0px;
 	transform: translate(150%, -40%);
 	width: 45px;
@@ -84,4 +88,5 @@ Icon.Right = styled(RightArrow)`
 		fill: #0d263b;
 	}
 `;
-export { Container, Wrapper, Carousel, Icon }
+
+export {Container,Wrapper, Icon, Carousel}

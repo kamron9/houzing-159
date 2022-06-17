@@ -5,7 +5,7 @@ import AliceCarousel from 'react-alice-carousel';
 import { Carousel, Container, Wrapper,Icon } from './style'
 
 
-const Recommended = () => {
+const Recommended = ({title}) => {
   const ref = useRef('click')
   const handleDragStart = (e) => e.preventDefault();
   const cards =[ 
@@ -26,7 +26,7 @@ const responsive =    {
 }
   return (
     <Container>
-      <h1 className='title'>Recommended</h1>
+      <h1 className='title'>{title || "Recommended"}</h1>
       <p className='description'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
       <Wrapper>
         <Icon.Left onClick={()=>ref.current.slidePrev()}/>
