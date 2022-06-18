@@ -6,6 +6,8 @@ import Choose from './ChooseInfo'
 import Category from './Category'
 import FarmHouse from './FarmHouse'
 import Comments from './Comments'
+import Footer from '../Footer'
+
 const Home = () => {
   return (
     <div>
@@ -17,6 +19,7 @@ const Home = () => {
       <FarmHouse/>
       <Recommended title={'Recent Properties for Rent'}/>
       <Comments/>
+      <Footer/>
     </div>
   )
 }

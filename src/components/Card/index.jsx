@@ -33,8 +33,8 @@ const Card = ({info, mr}) => {
       </InfoWrapper>
       <Footer>
         <PriceSection>
-          <OldPrice>{info?.oldPrice || '$2,800/mo'}</OldPrice>
-          <span className='sub-title'>{`$${info?.price}` || '$7,500/mo'}</span>
+          <OldPrice>${info?.price ||  0}</OldPrice>
+          <span className='sub-title'>${info?.salePrice || 0}</span>
         </PriceSection>
         <Characters>
           <Icon.Resize />

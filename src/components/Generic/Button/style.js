@@ -23,6 +23,7 @@ const Container = styled.button`
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
+	border-radius: 3px;
 	line-height: 20px;
 	width: ${({ width }) => (width ? width : 'auto')};
 	height: ${({ height }) => height || '44px'};

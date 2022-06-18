@@ -5,7 +5,6 @@ import home2 from '../../../assets/imgs/home2.png'
 
 const Carousel = () => {
   const slider = useRef('click')
-  console.log(slider);
   return (
     <Wrapper>
     <Icon.Left onClick={()=>slider.current.prev()}/>
