@@ -3,18 +3,20 @@ import Card from '../Card'
 import Filter from '../Filter'
 import { Container, Result, Wrapper } from './style'
 import { useQuery } from 'react-query'
+import { useLocation } from 'react-router-dom'
 
 
 const {REACT_APP_BASE_URL:url} = process.env
 
 const Properties = () => {
+    const {search} = useLocation()
     const [data, setData] = useState([])
 
-        useQuery("get started", ()=>{
-            return fetch(`${url}v1/houses/list`).then(res=>res.json())
+        useQuery(["get started", search], ()=>{
+            return fetch(`${url}v1/houses/list${search}`).then(res=>res.json())
         },{
             onSuccess: (res)=>{
-                setData(res.data)
+                setData(res?.data || [])
             }
         })      
         console.log(data);  
@@ -23,7 +25,7 @@ const Properties = () => {
         <Filter/>
         <h1 className='title'>Properties</h1>
         <p className='description text-center'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
-        <Result>{data.length} result</Result>
+        <Result>{data?.length} result</Result>
         <Wrapper>
             {
                 data.map((value)=>{
@@ -38,3 +40,5 @@ const Properties = () => {
 }
 
 export default Properties
+
+//useRaplace

@@ -22,14 +22,12 @@ const Result = styled.div`
     color: #0D263B;
 `
 const Wrapper = styled.div`
-    max-width: 1180px;
-    /* padding:  0 130px; */
+    max-width: 1440px;
+    padding:  0 130px;
     width: 100%;
     display: flex;
     flex-wrap: wrap; 
-    /* display: grid; */
-    grid-gap: 10px;
-    grid-template-columns: repeat(3,  minmax(280px, 1fr));
-    /* gap: 20px; */
+    grid-template-columns: repeat(3,  minmax(300px, 1fr));
+    grid-gap: 20px;
 `
 export {Container,Result,Wrapper}

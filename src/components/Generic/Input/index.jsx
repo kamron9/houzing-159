@@ -1,7 +1,7 @@
 import React from "react";
 import { Container,Icon, SearchInput } from "./style";
 
-const Input = ({ width, height, type, mt, mb, mr, ml, pl, onChange, onClick, placeholder, children }) => {
+const Input = ({ width, height,name,defaultValue, type, mt, mb, mr, ml, pl, onChange, onClick, placeholder, children }) => {
   return (
     <Container
       width={width}
@@ -16,6 +16,8 @@ const Input = ({ width, height, type, mt, mb, mr, ml, pl, onChange, onClick, pla
       placeholder={placeholder} 
       onChange={onChange}
       pl={pl}
+      defaultValue={defaultValue}
+      name={name}
       type="text" />
     </Container>
   );

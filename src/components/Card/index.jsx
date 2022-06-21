@@ -10,8 +10,8 @@ const Card = ({info, mr}) => {
       <ForSale>For Sale</ForSale>
       <Owner src={info?.owner || noUser}/>
       <InfoWrapper>
-        <div style={{whiteSpace: 'nowrap', overflow:'hidden'}} className='sub-title'>{info?.description || 'New Apartment Nice Wiew'}</div>
-        <p className='small-description'>{info?.address || 'Quincy St, Brooklyn, NY, USA'}</p>
+        <div style={{whiteSpace: 'nowrap', overflow:'hidden'}} className='sub-title'>{info?.country || 'New Apartment Nice Wiew'}</div>
+        <p className='small-description'>{info?.city || 'Quincy St, Brooklyn, NY, USA'}</p>
         <Details>
           <Details.Item>
             <Icon.Bed/>

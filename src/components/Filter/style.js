@@ -45,6 +45,7 @@ color: #0D263B;
 `
 Advanced.Input = styled.div`
 display: flex;
+gap: 20px;
 margin-bottom: 20px;
 `
 
