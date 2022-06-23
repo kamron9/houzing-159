@@ -16,8 +16,8 @@ const Navbar = () => {
           </Logo>
           <Nav>
             {
-              navbar.map(({ id, path, title }) => {
-                return (
+              navbar.map(({ id, path, title, hidden }) => {
+                return !hidden &&(
                   <Nav.Link to={path} key={id}>{title}</Nav.Link>
                 )
               })

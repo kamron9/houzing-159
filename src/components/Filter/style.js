@@ -51,5 +51,6 @@ margin-bottom: 20px;
 
 Advanced.Btn = styled.div`
 display: flex;
+gap: 20px;
 justify-content: flex-end;`
 export { Container, Form, Icon, Advanced }

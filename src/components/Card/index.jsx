@@ -10,8 +10,8 @@ const Card = ({info, mr}) => {
       <ForSale>For Sale</ForSale>
       <Owner src={info?.owner || noUser}/>
       <InfoWrapper>
-        <div style={{whiteSpace: 'nowrap', overflow:'hidden'}} className='sub-title'>{info?.country || 'New Apartment Nice Wiew'}</div>
-        <p className='small-description'>{info?.city || 'Quincy St, Brooklyn, NY, USA'}</p>
+        <div style={{whiteSpace: 'nowrap', overflow:'hidden'}} className='sub-title'>{info?.name || 'New Apartment Nice Wiew'}</div>
+        <p className='small-description' style={{whiteSpace: 'nowrap', overflow:'hidden'}}>{info?.country &&  info?.country +','} {info?.region && info?.region +','} {info?.city &&  info?.city +','} {info?.address} </p>
         <Details>
           <Details.Item>
             <Icon.Bed/>
@@ -33,8 +33,8 @@ const Card = ({info, mr}) => {
       </InfoWrapper>
       <Footer>
         <PriceSection>
-          <OldPrice>${info?.price ||  0}</OldPrice>
-          <span className='sub-title'>${info?.salePrice || 0}</span>
+          <OldPrice>${info?.salePrice ||  0}</OldPrice>
+          <span className='sub-title'>${info?.price || 0}</span>
         </PriceSection>
         <Characters>
           <Icon.Resize />
