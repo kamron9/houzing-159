@@ -4,6 +4,7 @@ import { useNavigate, Outlet } from 'react-router-dom'
 import { Container, Header, Wrapper, Nav, Logo } from './style'
 import { Button } from '../Generic'
 
+
 const Navbar = () => {
   const navigate = useNavigate()
   return (
@@ -23,7 +24,7 @@ const Navbar = () => {
               })
             }
           </Nav>
-          <Button width='120px'>Login</Button>
+          <Button onClick={() => navigate('/signin')}width='120px'>Login</Button>
         </Wrapper>
       </Header>
       <Outlet />

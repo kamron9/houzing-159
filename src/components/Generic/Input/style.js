@@ -12,6 +12,7 @@ const Container = styled.div`
   width: ${({ width }) => (width ? width : '100%')};
 	height: ${({ height }) => height || '44px'};
   border: 1px solid #e6e9ec;
+ 
 `
 
 const Icon = styled.div`
@@ -27,12 +28,17 @@ const SearchInput = styled.input`
 	border-radius: 2px;
 	outline: none;
 	border: none;
+	height: 100%;
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
 	color: #0d263b ;
+	:focus{
+		box-shadow: 0px 0px 5px 0.2px var(--activeColor);
+	}
+
 `
 
 export { Container, SearchInput, Icon }

@@ -74,5 +74,5 @@ Icon.Right = styled(RightArrow)`
 		fill: #0d263b;
 	}
     `;
-
-export{Container,Wrapper,Icon}
+	const Title = styled.div``
+export{Container,Wrapper,Icon,Title}
