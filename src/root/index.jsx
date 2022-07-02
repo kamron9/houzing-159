@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate,useLocation } from 'react-router-dom'
 import { navbar } from '../utils/navbar'
 
 const Root = () => {
@@ -28,7 +28,7 @@ const Root = () => {
             })
           }
         </Route>
-     
+     {}
       </Routes>
     </div>
   )

@@ -1,12 +1,13 @@
 import React from 'react'
 import { navbar } from '../../utils/navbar'
-import { useNavigate, Outlet } from 'react-router-dom'
+import { useNavigate, Outlet,useLocation } from 'react-router-dom'
 import { Container, Header, Wrapper, Nav, Logo } from './style'
 import { Button } from '../Generic'
 
 
 const Navbar = () => {
   const navigate = useNavigate()
+  const location = useLocation()
   return (
     <Container>
       <Header>
@@ -24,7 +25,9 @@ const Navbar = () => {
               })
             }
           </Nav>
-          <Button onClick={() => navigate('/signin')}width='120px'>Login</Button>
+         {
+          location.pathname !== '/signin' && <Button onClick={() => navigate('/signin')}width='120px'>Login</Button>
+         }
         </Wrapper>
       </Header>
       <Outlet />

@@ -21,11 +21,6 @@ const Wrapper = styled.div`
     border-radius: 3px;
     padding: 30px;
     gap: 20px;
-    span{
-        color: var(--activeColor);
-        text-decoration: underline;
-        font-size: 16px;
-        cursor: pointer;
-    }
+
 `
 export {Container, Wrapper}

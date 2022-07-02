@@ -6,6 +6,8 @@ position: relative;
     max-width: 280px;
     min-width: 250px;
     height: 350px;
+    cursor: pointer;
+    user-select: none;
 `
 const Img = styled.img`
     width: 100%;

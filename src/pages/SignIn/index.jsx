@@ -45,6 +45,7 @@ const SignIn = () => {
         <Input  ref={emailRef}  placeholder={'email'}/>
         <Input  ref={pwRef} placeholder={'password'}/>
         <Button onClick={onSubmit} width={'100%'} type={'primary'}>Login</Button>
+        <span onClick={()=>navigate('/signup')}>create a new account</span>
       </Wrapper>
       <Footer/>
     </Container>
